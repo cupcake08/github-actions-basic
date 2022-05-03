@@ -1,5 +1,5 @@
 FROM golang:1.18-alpine3.15
-
+RUN apk add git
 RUN mkdir /app
 ADD . /app
 WORKDIR /app
