@@ -4,5 +4,5 @@ RUN mkdir /app
 ADD . /app
 WORKDIR /app
 RUN go clean --modcache \
-    && go build -o main . \
+    && go build -o main . 
 CMD ["/app/main"]
